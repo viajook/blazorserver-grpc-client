@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\obj",
+    "\\obj\\Debug",
+    "\\obj\\Debug\\net6.0",
+    "\\obj\\Debug\\net6.0\\Protos",
+    "\\Pages",
+    "\\Protos"
+  ],
+  "SelectedNode": "\\Pages\\Index.razor",
+  "PreviewInSolutionExplorer": false
+}

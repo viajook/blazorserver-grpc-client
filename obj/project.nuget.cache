@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "H0iBWlvGDZ+qvk6scVOQdPC7J+QtYry4R7cYkJnAnjA+xvogB0d8Q5fTpTzeN7WHThC5U35B1dOQuXjsmlK7ag==",
+  "success": true,
+  "projectFilePath": "C:\\_JOOK\\coding\\a22\\dotnet_coding\\BlazorServerGrpcClientApp\\BlazorServerGrpcClientApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jook\\.nuget\\packages\\google.protobuf\\3.21.7\\google.protobuf.3.21.7.nupkg.sha512",
+    "C:\\Users\\jook\\.nuget\\packages\\grpc.core\\2.46.5\\grpc.core.2.46.5.nupkg.sha512",
+    "C:\\Users\\jook\\.nuget\\packages\\grpc.core.api\\2.46.5\\grpc.core.api.2.46.5.nupkg.sha512",
+    "C:\\Users\\jook\\.nuget\\packages\\grpc.tools\\2.49.1\\grpc.tools.2.49.1.nupkg.sha512",
+    "C:\\Users\\jook\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

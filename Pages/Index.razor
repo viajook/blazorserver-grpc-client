@@ -1,0 +1,53 @@
+﻿@page "/"
+
+<PageTitle>Blazor Client to Spring boot gRPC Server</PageTitle>
+
+<h1>Blazor Grpc Client</h1>
+
+<p>
+    <input @bind="yourText" placeholder="enter some text"  />
+    
+</p>
+
+<p>
+<button class="btn btn-primary" onclick="@ToUpper">To Uppercase</button>
+<button class="btn btn-primary" onclick="@Capitalize">Capitalize First Char</button>
+</p>
+
+
+<hr />
+
+<p>
+    Response from gRPC Server: <strong>@Text</strong>
+</p>
+
+@functions {
+
+    string yourText = "enter some text";
+    string serverResponse;
+
+    private string Text;
+
+    async Task ToUpper()
+    {
+        var channel = new Channel("localhost:8284", ChannelCredentials.Insecure);
+        var client = new TextConverter.TextConverterClient(channel);
+
+        var reply = await client.toUpperAsync(new RequestText { InputText = yourText });
+        Text = reply.OutputText;
+
+        await channel.ShutdownAsync();   
+    }
+
+    async Task Capitalize()
+    {
+        var channel = new Channel("localhost:8284", ChannelCredentials.Insecure);
+        var client = new TextConverter.TextConverterClient(channel);
+
+        var reply = await client.capitalizeFirstCharacterAsync(new RequestText { InputText = yourText });
+        Text = reply.OutputText;
+
+        await channel.ShutdownAsync();
+    }
+
+}

@@ -1,0 +1,2 @@
+obj\Release\net6.0\Protos/TextConverter.cs \
+obj\Release\net6.0\Protos/TextConverterGrpc.cs: Protos/TextConverter.proto
